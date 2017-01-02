@@ -1,0 +1,34 @@
+---
+title: "Comic Relief"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(comics)
+```
+
+## Motivation
+
+I'm bored, and you deserve a break from data science.
+
+## XKCD
+
+You can plot a random XKCD into your plots window:
+
+```{r}
+xkcd()
+```
+
+If you don't want the alt-text, I won't judge either:
+
+```{r}
+xkcd(print_alt = FALSE)
+```
+
+
+Or a specific one:
+
+```{r}
+xkcd(88)
+```
