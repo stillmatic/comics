@@ -1,5 +1,7 @@
-Comic Relief
+Comics - an R package
 ================
+
+[![Build Status](https://travis-ci.org/stillmatic/comics.svg?branch=master)](https://travis-ci.org/stillmatic/comics) [![codecov](https://codecov.io/gh/stillmatic/comics/branch/master/graph/badge.svg)](https://codecov.io/gh/stillmatic/comics)
 
 Motivation
 ----------
@@ -15,9 +17,9 @@ You can plot a random XKCD into your plots window:
 xkcd()
 ```
 
-    ## Tech Support Cheat Sheet: 'Hey Megan, it's your father. How do I print out a flowchart?'
+    ## Pi Equals: My most famous drawing, and one of the first I did for the site
 
-![](readme_files/figure-markdown_github/unnamed-chunk-1-1.png)
+![](readme_files/figure-markdown_github/random_xkcd-1.png)
 
 If you don't want the alt-text, I won't judge either:
 
@@ -25,7 +27,7 @@ If you don't want the alt-text, I won't judge either:
 xkcd(print_alt = FALSE)
 ```
 
-![](readme_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](readme_files/figure-markdown_github/random_xckd_noalt-1.png)
 
 Or a specific one:
 
@@ -35,4 +37,4 @@ xkcd(88)
 
     ## Escher Bracelet: The only downside is that it would be a little uncomfortable
 
-![](readme_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](readme_files/figure-markdown_github/lucky_xkcd-1.png)
