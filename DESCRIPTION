@@ -1,0 +1,18 @@
+Package: comics
+Type: Package
+Title: Shows you a webcomic 
+Version: 0.1.0
+Authors@R: c(
+    person("Chris", "Hua", email = "chua@wharton.upenn.edu", role = c("aut", "cre"))
+  )
+Description: Finds you a comic strip and plots it.
+    Has support for XKCD and more coming.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    png (>= 0.1-7),
+    jpeg (>= 0.1-8),
+    magrittr (>= 1.5),
+    rvest (>= 0.3.2),
+    httr (>= 1.2.1)
