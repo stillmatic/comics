@@ -10,7 +10,7 @@
 #' @examples
 #' plot_img("https://www.r-project.org/logo/Rlogo.png")
 plot_img <- function(src) {
-    plot.new()
+    graphics::plot.new()
     if (grepl(pattern = ".jpg$", src)) {
         plot_jpg(src)
     } else if (grepl(pattern = ".png$", src)) {
@@ -34,8 +34,8 @@ plot_png <- function(src) {
         httr::GET() %>%
         httr::content("raw") %>%
         png::readPNG() %>%
-        as.raster()
-    plot(raster_img)
+        grDevices::as.raster()
+    graphics::plot(raster_img)
 }
 
 #' Plot a jpg file from url
@@ -52,6 +52,6 @@ plot_jpg <- function(src) {
         httr::GET() %>%
         httr::content("raw") %>%
         jpeg::readJPEG() %>%
-        as.raster()
-    plot(raster_img)
+        grDevices::as.raster()
+    graphics::plot(raster_img)
 }

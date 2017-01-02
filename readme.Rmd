@@ -16,19 +16,19 @@ I'm bored, and you deserve a break from data science.
 
 You can plot a random XKCD into your plots window:
 
-```{r}
+```{r random_xkcd}
 xkcd()
 ```
 
 If you don't want the alt-text, I won't judge either:
 
-```{r}
+```{r random_xckd_noalt}
 xkcd(print_alt = FALSE)
 ```
 
 
 Or a specific one:
 
-```{r}
+```{r lucky_xkcd}
 xkcd(88)
 ```

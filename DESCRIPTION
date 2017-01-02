@@ -15,5 +15,9 @@ Imports:
     jpeg (>= 0.1-8),
     magrittr (>= 1.5),
     rvest (>= 0.3.2),
+    xml2 (>= 1.0.0),
     httr (>= 1.2.1)
+Suggests:
+    testthat (>= 1.0.2),
+    rmarkdown (>= 1.2)
 RoxygenNote: 5.0.1
